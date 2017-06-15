@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>392</width>
+    <height>348</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+   <layout class="QGridLayout" name="gridLayout">
+    <item row="0" column="0" colspan="3">
+     <widget class="QTextEdit" name="textEdit"/>
+    </item>
+    <item row="1" column="0">
+     <widget class="QLabel" name="label">
+      <property name="text">
+       <string>First</string>
+      </property>
+     </widget>
+    </item>
+    <item row="1" column="1" rowspan="3">
+     <widget class="Line" name="line">
+      <property name="orientation">
+       <enum>Qt::Vertical</enum>
+      </property>
+     </widget>
+    </item>
+    <item row="1" column="2">
+     <widget class="QLabel" name="label_4">
+      <property name="text">
+       <string>0</string>
+      </property>
+     </widget>
+    </item>
+    <item row="2" column="0">
+     <widget class="QLabel" name="label_2">
+      <property name="text">
+       <string>Second</string>
+      </property>
+     </widget>
+    </item>
+    <item row="2" column="2">
+     <widget class="QLabel" name="label_5">
+      <property name="text">
+       <string>0</string>
+      </property>
+     </widget>
+    </item>
+    <item row="3" column="0">
+     <widget class="QLabel" name="label_3">
+      <property name="text">
+       <string>Third</string>
+      </property>
+     </widget>
+    </item>
+    <item row="3" column="2">
+     <widget class="QLabel" name="label_6">
+      <property name="text">
+       <string>0</string>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menuBar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>392</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menu">
+    <property name="title">
+     <string>File</string>
+    </property>
+    <addaction name="actionXinjian"/>
+    <addaction name="actionDakai"/>
+    <addaction name="actionBaocun"/>
+    <addaction name="actionGuanbi"/>
+    <addaction name="actionTuichu"/>
+   </widget>
+   <widget class="QMenu" name="menu_2">
+    <property name="title">
+     <string>Edit</string>
+    </property>
+    <addaction name="actionChazhao"/>
+   </widget>
+   <widget class="QMenu" name="menu_3">
+    <property name="title">
+     <string>Help</string>
+    </property>
+    <addaction name="actionShuoming"/>
+   </widget>
+   <addaction name="menu"/>
+   <addaction name="menu_2"/>
+   <addaction name="menu_3"/>
+  </widget>
+  <widget class="QToolBar" name="mainToolBar">
+   <attribute name="toolBarArea">
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+   <addaction name="actionXinjian"/>
+   <addaction name="actionDakai"/>
+   <addaction name="actionBaocun"/>
+   <addaction name="actionGuanbi"/>
+   <addaction name="actionChazhao"/>
+   <addaction name="actionTuichu"/>
+   <addaction name="actionShuoming"/>
+  </widget>
+  <widget class="QStatusBar" name="statusBar"/>
+  <action name="actionXinjian">
+   <property name="icon">
+    <iconset resource="../build-DapingEditor-Desktop_Qt_5_5_0_MSVC2013_64bit-Release/dapingresource.qrc">
+     <normaloff>:/new/prefix1/release/images/document-new.png</normaloff>:/new/prefix1/release/images/document-new.png</iconset>
+   </property>
+   <property name="text">
+    <string>New</string>
+   </property>
+  </action>
+  <action name="actionDakai">
+   <property name="icon">
+    <iconset resource="../build-DapingEditor-Desktop_Qt_5_5_0_MSVC2013_64bit-Release/dapingresource.qrc">
+     <normaloff>:/new/prefix1/release/images/document-open.png</normaloff>:/new/prefix1/release/images/document-open.png</iconset>
+   </property>
+   <property name="text">
+    <string>Open</string>
+   </property>
+  </action>
+  <action name="actionBaocun">
+   <property name="icon">
+    <iconset resource="../build-DapingEditor-Desktop_Qt_5_5_0_MSVC2013_64bit-Release/dapingresource.qrc">
+     <normaloff>:/new/prefix1/release/images/document-save.png</normaloff>:/new/prefix1/release/images/document-save.png</iconset>
+   </property>
+   <property name="text">
+    <string>Save</string>
+   </property>
+  </action>
+  <action name="actionGuanbi">
+   <property name="icon">
+    <iconset resource="../build-DapingEditor-Desktop_Qt_5_5_0_MSVC2013_64bit-Release/dapingresource.qrc">
+     <normaloff>:/new/prefix1/release/images/gtk-close.png</normaloff>:/new/prefix1/release/images/gtk-close.png</iconset>
+   </property>
+   <property name="text">
+    <string>Close</string>
+   </property>
+  </action>
+  <action name="actionTuichu">
+   <property name="icon">
+    <iconset resource="../build-DapingEditor-Desktop_Qt_5_5_0_MSVC2013_64bit-Release/dapingresource.qrc">
+     <normaloff>:/new/prefix1/release/images/exit.png</normaloff>:/new/prefix1/release/images/exit.png</iconset>
+   </property>
+   <property name="text">
+    <string>Exit</string>
+   </property>
+  </action>
+  <action name="actionChazhao">
+   <property name="icon">
+    <iconset resource="../build-DapingEditor-Desktop_Qt_5_5_0_MSVC2013_64bit-Release/dapingresource.qrc">
+     <normaloff>:/new/prefix1/release/images/edit-find.png</normaloff>:/new/prefix1/release/images/edit-find.png</iconset>
+   </property>
+   <property name="text">
+    <string>Find</string>
+   </property>
+  </action>
+  <action name="actionShuoming">
+   <property name="icon">
+    <iconset resource="../build-DapingEditor-Desktop_Qt_5_5_0_MSVC2013_64bit-Release/dapingresource.qrc">
+     <normaloff>:/new/prefix1/release/images/help.png</normaloff>:/new/prefix1/release/images/help.png</iconset>
+   </property>
+   <property name="text">
+    <string>Note</string>
+   </property>
+  </action>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources>
+  <include location="../build-DapingEditor-Desktop_Qt_5_5_0_MSVC2013_64bit-Release/dapingresource.qrc"/>
+ </resources>
+ <connections/>
+</ui>
